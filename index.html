@@ -5,49 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-index.css">
 </head>
 
-<body style="background-image: url('images/.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
-
+<body>
     <div class="container">
         <div class="logo">
             <!-- <img src="images/seaviewhotel logo1.png" alt="Logo">-->
         </div>
         <div class="content">
-            <img src="images/seaviewhotel logo1.png" alt="Content">
+            <img class="large-button" src="images/seaviewhotel logo1.png" alt="Content">
             <h1>Welcome to Semporna Seaview Hotel</h1>
             <h2>欢迎来到仙本那海景酒店</h2>
-            <div id="main-buttons-container">
-                <!-- Old button 
-                <button class="button1" onclick="window.location.href='page1.html'">Hotel Guide 酒店指南</button>
-                <button class="button2" onclick="window.location.href='page2.html'">Room Service 客房服务</button>
-                <button class="button3" onclick="window.location.href='page3.html'">Review 评论</button>
-                <button class="button4" onclick="window.location.href='page4.html'">Room Compendium 客房手册</button>
-                -->
-                <button class="index-button" onclick="window.location.href='page1.html'">Hotel Guide 酒店指南</button>
-                <button class="index-button" onclick="window.location.href='page4.html'">Surrounding 周围环境</button>
-                <button class="index-button" onclick="window.location.href='https://forms.zohopublic.com/seaviewmanage/form/ServiceOrderForm/formperma/x1VK-1tJwsQDQPLb6WPdRkC7nQmYJno1Ap-38ZWgbzA'">Room Service 客房服务</button>
-                <button class="index-button" onclick="window.location.href='https://forms.office.com/r/QW32gJv71w'">Suggestion Form 建议表格</button>
-                
-                
-            </div>  
+            <div class="large-button-container">
+                <button class="charming-button large-button" onclick="window.location.href='home.html'">
+                    <img src="images/Hotel Directory.png" alt="home">
+                </button>
+            </div>
+            <div class="small-buttons-container">
+                <button class="charming-button small-button" onclick="window.location.href='charm.html'">
+                    <img src="images/WeChat.png" alt="wechat">
+                </button>
+                <button class="charming-button small-button" onclick="window.location.href='https://api.whatsapp.com/send/?phone=60178998827&text&type=phone_number&app_absent=0'">
+                    <img src="images/Whatsapp.png" alt="whatsapp">
+                </button>
+            </div>
         </div>
-        <!-- 
-        <div class="popup" onclick="myFunction()">Hello，how are you today...哈喽，你好吗...
-            <span class="popuptext" id="myPopup"> SMILE 笑
-                <div class="smiley-face">
-                    <div class="eye"></div>
-                    <div class="eye"></div>
-                    <div class="mouth"></div>
-                </div>
-            </span>
-        </div>
-        -->
     </div>
-
-    <script src="script.js"></script>
-    
 </body>
 
 </html>
+
+
+
