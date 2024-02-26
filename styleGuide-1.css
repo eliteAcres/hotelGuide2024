@@ -1,0 +1,155 @@
+
+/* Common button styles */
+.button {
+    margin: 15px 10px; /* Add spacing between buttons */
+    padding: 10px 20px; /* Set the padding to create a square button */
+    background-color: #116479;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 110px; /* Set maximum width for the button */
+    height: 120px; /* Set the same height as the width to create a square button */
+    box-sizing: border-box;
+    text-decoration: none; /* Remove the underline style for anchor tags */
+    text-align: center;  /*Center the text inside the button */
+    /*word-wrap: break-word;  Allow words to be broken and wrap to the next line */
+    line-height: 3; /* Adjust line height to reduce the gap between lines */
+    overflow: hidden; /* Hide overflowing content */
+    vertical-align: middle; /* Vertically align the button */
+    white-space: pre-line; /* Allow text to wrap and break into multiple lines */
+    font-size: 13px;
+    transition: background-color 0.3s ease;
+}
+
+/* Optional: Add media queries for responsive design */
+
+@media (min-width: 768px) {
+    .button {
+        /*max-width: 100%; /* Adjust maximum width for smaller screens */
+        width: 120px; /* Adjust the width for larger screens if needed */
+        height: 120px; /* Set the same height as the width for a square button */
+    }
+}
+
+
+/* Center the content in a container */
+.container {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+/* Center the content in a container */
+.container {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Style for the content section */
+.content {
+    background-image: url('images/Copy of backgroundSecond.png'); /* Path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    background-color: rgb(123, 242, 218); /* tiffany green 123, 242, 218 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Add this CSS rule to set the maximum width for the content logo */
+.content img {
+    max-width: 100%; /* Set the maximum width to 100% of the parent container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Adjust the font size of headings and other text inside the .content div */
+.content {
+    font-size: 18px; /* Set the base font size for .content */
+}
+
+.content h1 {
+    font-size: 22px; /* Set the font size for <h1> inside .content */
+}
+
+.content h2 {
+    font-size: 22px; /* Set the font size for <h2> inside .content */
+}
+
+
+
+
+/* display image format */
+.image-container {
+    text-align: center; /* Center the image horizontally */
+    /*overflow: hidden; /* Hide overflow for zoom effect */
+}
+
+#displayedImage {
+    max-width: 100%; /* Make the image responsive to screen size */
+    height: auto; /* Maintain aspect ratio */
+    /*transition: transform 0.3s ease; /* Add transition effect for smooth zooming */
+}
+
+
+
+
+
+/* Additional styles for button2 */
+#button2 {
+    width: 200px;
+    height: 80px;
+    font-size: 18px;
+    line-height: 80px;
+}
+
+#homeButton {
+    margin-top: 20px; /* Add some space between the form button and other elements */
+    padding: 15px 30px; /* Padding for the form button */
+    background-color: #d3bb35; /* Green background color */
+    color: #116479; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 25px; /* Round the corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    font-size: 16px; /* Font size for the form button */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+
+    /* Add hover effect */
+    &:hover {
+        background-color: #d3bb35; /* Darker green on hover */
+    }
+
+
+}
+
+/* back button for page1-1.html */
+#backButton {
+    background-color: #3498db; /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Add padding */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+
+    /* Add hover effect */
+    &:hover {
+        background-color: #2980b9; /* Darker blue on hover */
+    }
+}
+
+
+
+
+

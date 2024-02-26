@@ -1,0 +1,450 @@
+/* Reset default margin and padding for the body */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-color: #f2f2f2; */
+    background: linear-gradient(45deg, #f4f5f5, #f7f7f7);
+}
+
+/* Center the content in a container */
+.container {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Style for the content section */
+.content {
+    /*background-image: url('images/backgroundFirst.png');  Path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Add this CSS rule to set the maximum width for the content logo */
+.content img {
+    max-width: 80%; /* Set the maximum width to 100% of the parent container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Adjust the font size of headings and other text inside the .content div */
+.content {
+    font-size: 18px; /* Set the base font size for .content */
+}
+
+.content h1 {
+    font-size: 22px; /* Set the font size for <h1> inside .content */
+}
+
+.content h2 {
+    font-size: 22px; /* Set the font size for <h2> inside .content */
+}
+
+#main-buttons-container {
+    font-size: 16px; /* Set the font size for buttons inside #main-buttons-container */
+}
+
+/* Optional: You can adjust font sizes for larger screens using media queries */
+@media (min-width: 768px) {
+    .content {
+        font-size: 20px; /* Increase base font size for larger screens */
+    }
+
+    .content h1 {
+        font-size: 28px; /* Increase font size for <h1> on larger screens */
+    }
+
+    .content h2 {
+        font-size: 28px; /* Increase font size for <h2> on larger screens */
+    }
+
+    #main-buttons-container {
+        font-size: 18px; /* Increase font size for buttons on larger screens */
+    }
+}
+
+
+
+
+/* Style for the logo section */
+.logo {
+    text-align: center;
+    padding: 20px 0; /* Add padding to create space between logo and content */
+    position: relative; /* Set position to relative */
+    z-index: 2; /* Set a higher z-index to keep the logo above other elements */
+}
+
+.logo img {
+    width: 200px; /* Set the width of your logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Additional styles for larger screens if needed */
+@media (min-width: 768px) {
+    .logo {
+        padding: 30px 0; /* Adjust padding for larger screens */
+    }
+
+    .logo img {
+        width: 200px; /* Adjust logo size for larger screens */
+    }
+}
+
+
+/*#main-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 300px;
+    margin: 0 auto;
+}*/
+
+
+/* Styles for the main buttons container */
+#main-buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Add margin between content and buttons */
+}
+
+
+/* Button style for index.html */
+.index-button {
+    margin: 10px; /* Add spacing between buttons */
+    padding: 10px 20px; /* Set the padding to create a small rectangular button */
+    background-color: #3498db; /* Blue background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.index-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+
+
+
+
+
+
+
+
+/* Common button styles */
+.button {
+    margin: 15px 10px; /* Add spacing between buttons */
+    padding: 10px 20px; /* Set the padding to create a square button */
+    background-color: #116479;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 130px; /* Set maximum width for the button */
+    height: 130px;  /* Set the same height as the width to create a square button */
+    box-sizing: border-box;
+    text-decoration: none; /* Remove the underline style for anchor tags */
+    text-align: center;  /*Center the text inside the button */
+    /*word-wrap: break-word;  Allow words to be broken and wrap to the next line */
+    line-height: 2; /* Adjust line height to reduce the gap between lines */
+    overflow: hidden; /* Hide overflowing content */
+    vertical-align: middle; /* Vertically align the button */
+    white-space: pre-line; /* Allow text to wrap and break into multiple lines */
+    font-size: 13px;
+    transition: background-color 0.3s ease;
+}
+
+/* Optional: Add media queries for responsive design */
+
+@media (min-width: 768px) {
+    .button {
+        /*max-width: 100%; /* Adjust maximum width for smaller screens */
+        width: 150px; /* Adjust the width for larger screens if needed */
+        height: 150px; /* Set the same height as the width for a square button */
+    }
+}
+
+
+
+
+/* display image format */
+.image-container {
+    text-align: center; /* Center the image horizontally */
+    /*overflow: hidden; /* Hide overflow for zoom effect */
+}
+
+#displayedImage {
+    max-width: 100%; /* Make the image responsive to screen size */
+    height: auto; /* Maintain aspect ratio */
+    /*transition: transform 0.3s ease; /* Add transition effect for smooth zooming */
+}
+
+
+
+.button1 {
+    background-color: #3498db;
+    color: white;
+}
+
+.button2 {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.button3 {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.button4 {
+    background-color: #f39c12;
+    color: white;
+}
+
+.button:hover {
+    transform: scale(1.1); /* Add a slight zoom effect on hover */
+}
+
+
+
+
+/* Additional styles for button2 */
+#button2 {
+    width: 200px;
+    height: 80px;
+    font-size: 18px;
+    line-height: 80px;
+}
+
+#homeButton {
+    margin-top: 20px; /* Add some space between the form button and other elements */
+    padding: 15px 30px; /* Padding for the form button */
+    background-color: #d3bb35; /* Green background color */
+    color: #116479; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 25px; /* Round the corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    font-size: 16px; /* Font size for the form button */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+
+    /* Add hover effect */
+    &:hover {
+        background-color: #d3bb35; /* Darker green on hover */
+    }
+
+    /* Additional styles for larger screens if needed */
+    @media (min-width: 768px) {
+        font-size: 18px; /* Increase font size for larger screens */
+        padding: 20px 40px; /* Adjust padding for larger screens */
+    }
+}
+
+/* back button for page1-1.html */
+#backButton {
+    background-color: #3498db; /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Add padding */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+
+    /* Add hover effect */
+    &:hover {
+        background-color: #2980b9; /* Darker blue on hover */
+    }
+}
+
+
+#formButton {
+    margin-top: 20px; /* Add some space between the form button and other elements */
+    padding: 10px 20px; /* Adjust padding for the form button */
+    font-size: 14px; /* Reduce font size for the form button */
+    border-radius: 10px; /* Optional: Round the corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+
+    /* Add hover effect */
+    &:hover {
+        background-color: #45a049; /* Darker green on hover */
+    }
+
+    /* Additional styles for larger screens if needed */
+    @media (min-width: 768px) {
+        font-size: 16px; /* Increase font size for larger screens */
+        padding: 15px 30px; /* Adjust padding for larger screens */
+    }
+}
+
+#googleButton {
+    margin-top: 20px; /* Add some space between the form button and other elements */
+    padding: 10px 20px; /* Adjust padding for the form button */
+    font-size: 14px; /* Reduce font size for the form button */
+    border-radius: 10px; /* Optional: Round the corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+
+    /* Add hover effect */
+    &:hover {
+        background-color: #45a049; /* Darker green on hover */
+    }
+
+    /* Additional styles for larger screens if needed */
+    @media (min-width: 768px) {
+        font-size: 16px; /* Increase font size for larger screens */
+        padding: 15px 30px; /* Adjust padding for larger screens */
+    }
+}
+
+#suggestButton {
+    margin-top: 20px; /* Add some space between the form button and other elements */
+    padding: 10px 20px; /* Adjust padding for the form button */
+    font-size: 14px; /* Reduce font size for the form button */
+    border-radius: 10px; /* Optional: Round the corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+
+    /* Add hover effect */
+    &:hover {
+        background-color: #45a049; /* Darker green on hover */
+    }
+
+    /* Additional styles for larger screens if needed */
+    @media (min-width: 768px) {
+        font-size: 16px; /* Increase font size for larger screens */
+        padding: 15px 30px; /* Adjust padding for larger screens */
+    }
+}
+
+
+
+/* CSS for prevButton and nextButton */
+.prevButton,
+.nextButton {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #d33bb2;
+    color: #0b5061;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    outline: none; /* Remove outline on focus for better visual appearance */
+}
+
+.prevButton:hover,
+.nextButton:hover {
+    background-color: #b7df26; /* Change background color on hover */
+    color: white;
+}
+
+/* Optional: Add a box shadow for a subtle 3D effect */
+.prevButton,
+.nextButton {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Increase font size and padding for larger screens */
+@media (min-width: 768px) {
+    .prevButton,
+    .nextButton {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+
+
+
+
+.button-container {
+    position: relative; /* Set position to relative for the button container */
+    z-index: 1; /* Set a lower z-index than the logo to keep buttons below the logo */
+}
+
+
+.title-container {
+    margin-bottom: 20px; /* Add margin between the titles and the button */
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    margin-top: 20px; /* Add margin between the titles and the slideshow */
+}
+
+
+
+
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+}
+
+#homeButton {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #d3bb35;
+    color: #116479;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#homeButton:hover {
+    background-color: #d3bb35;
+}
+
+.button {
+    margin: 15px 10px;
+    padding: 10px 20px;
+    background-color: #116479;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Display</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add CSS for zoomed image */
+        .image-container {
+            text-align: center; /* Center the image horizontally */
+            overflow: hidden; /* Hide overflow for zoom effect */
+        }
+
+        #displayedImage {
+            max-width: 100%; /* Make the image responsive to screen size */
+            height: auto; /* Maintain aspect ratio */
+            transition: transform 0.3s ease; /* Add transition effect for smooth zooming */
+        }
+
+        /* Add styles for buttons */
+        .zoomButton, .backButton {
+            margin: 15px 10px; /* Add spacing between buttons */
+            padding: 10px 20px; /* Set the padding to create a square button */
+            background-color: #116479;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .zoomButton:hover, .backButton:hover {
+            transform: scale(1.1); /* Add a slight zoom effect on hover */
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="image-container">
+                <img id="displayedImage" src="" alt="Displayed Image">
+            </div>
+
+            <button class="backButton">Back 返回</button>
+        </div>
+    </div>
+    
+    <script src="gesture.js"></script>
+</body>
+
+</html>
