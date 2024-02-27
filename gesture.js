@@ -79,3 +79,28 @@ document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener("touchend", stopDragging);
     document.addEventListener("gesturechange", handlePinch);
 });
+
+
+
+
+
+// This JavaScript code defines functionality for zooming and panning an image on a webpage. Here's an explanation of each part of the code:
+
+// Event Listener: The code starts by adding an event listener for the DOMContentLoaded event, which fires when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading.
+
+// Initialization: Inside the event listener, it initializes variables such as displayedImage (which represents the image element to be manipulated), zoomLevel, maxZoom, and minZoom. These variables control the zoom level of the image and its limits.
+
+// Dragging Variables: Additional variables lastX, lastY, and isDragging are initialized to keep track of the last position of the mouse or touch during dragging operations.
+
+// Zoom Functions: Two functions zoomIn() and zoomOut() are defined to handle zooming in and out of the image. These functions adjust the zoomLevel variable and call updateZoomAndTranslate() to update the image's scale and position.
+
+// Update Zoom and Translate: The updateZoomAndTranslate() function applies the current zoom level and translation to the image by setting its CSS transform property.
+
+// Pinch Gesture Handling: The handlePinch() function handles pinch gestures for zooming on touch devices. It calculates the distance between two touch points and adjusts the zoom level accordingly.
+
+// Dragging Functions: startDragging(), stopDragging(), and dragImage() functions handle mouse dragging events. They update the lastX and lastY variables to track the image's position during dragging and apply the translation accordingly.
+
+// Event Listeners: Event listeners are added for touch events (touchstart, touchmove, touchend) and the gesturechange event, which is fired when a gesture (such as pinch) occurs on a touch-enabled device.
+
+// This code allows any page that includes it to have zoom in and zoom out functionality for an image specified with the ID "displayedImage". By simply including this JavaScript file in the HTML of any page, the zoom and pan effects will be available for images with the specified ID.
+

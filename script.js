@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
 // page1-1.html logic
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -88,7 +87,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
     // Function to navigate back to page1.html
     function goBack() {
         window.location.href = "page1.html";
@@ -110,9 +108,6 @@ document.addEventListener("DOMContentLoaded", function () {
     displayedImage.addEventListener("mousedown", startDragging);
     document.addEventListener("mouseup", stopDragging);
     document.addEventListener("mousemove", dragImage);
-
-
-
 
 
 
@@ -161,9 +156,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
 // When the user clicks on <div>, open the popup
 function myFunction() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
 }
+
+
+
+// The provided JavaScript code contains functionality for creating buttons dynamically based on data and implementing zooming and panning effects for an image on two different HTML pages (page1.html and page1-1.html). Let's break down how each part of the code works:
+
+// Creating Buttons Dynamically (page1.html):
+// The code dynamically creates buttons based on the data provided in the buttonsData array.
+// Each button is created using document.createElement("button") and appended to the buttonsContainer.
+// Event listeners are added to each button to handle clicks. When clicked, the button stores the corresponding image link in the localStorage and redirects the user to page1-1.html.
+
+// Zooming and Panning Effect (page1-1.html):
+// This page implements zooming and panning functionality for an image.
+// The zoom level is controlled by the zoomIn() and zoomOut() functions, which adjust the zoomLevel variable and update the image's scale using CSS transformations.
+// Panning is achieved by tracking mouse events (mousedown, mousemove, mouseup) to determine when the user is dragging the image. The startDragging(), dragImage(), and stopDragging() functions handle these events.
+// When the page loads, it retrieves the image link stored in localStorage, sets the image source, and applies the initial zoom level.
+
+// Event Listeners and Button Click Handling:
+// Event listeners are attached to various elements (buttons, mouse events) to trigger specific actions.
+// For example, clicking the "Back" button (backButton) redirects the user to page1.html.
+// The goBack() function handles this navigation.
+
+// Popup Functionality:
+// There is a function named myFunction() that toggles the visibility of a popup element (myPopup) when a certain element is clicked. However, the implementation of the popup is not provided in the given code snippet.
+
+// Overall, the code dynamically generates buttons with associated actions on one page and implements zooming and panning functionality for an image on another page, providing interactive user experiences.
+

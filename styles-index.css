@@ -62,20 +62,59 @@ body {
 }
 
 .charming-button {
-    margin: 10px;
-    padding: 10px 20px;
+    margin: 5px; /* Reduce margin */
+    padding: 8px 16px; /* Adjust padding */
     background-color: #116479;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px; /* Reduce font size */
     transition: background-color 0.3s ease;
 }
 
 .charming-button:hover {
-    background-color: #0b5061;
+    background-color: #0f9236;
 }
+
+
+
+
+/* adjust width and height for the 3 button */
+.large-button {
+    width: 210px;
+    height: 100px;
+    background-image: url('images/Hotel Directory.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.small-button {
+    width: 100px;
+    height: 70px;
+}
+
+.half-width {
+    width: 50px;
+}
+
+.large-button-container {
+    margin-bottom: 5px; /* Adjust the margin bottom to reduce the vertical gap */
+}
+
+.small-buttons-container {
+    margin-top: 5px; /* Adjust the margin top to reduce the vertical gap */
+}
+
+
+
+
+
 
 /* Additional styles for larger screens if needed */
 @media (min-width: 768px) {
