@@ -82,15 +82,27 @@ body {
 
 /* adjust width and height for the 3 button */
 .large-button {
-    width: 210px;
-    height: 100px;
-    background-image: url('images/Hotel Directory.png');
+    width: 210px; 
+    height: 190px; 
+    /*background-image: url('images/Hotel Directory.png'); */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    
+    /*
+width: Sets the width of the button to 210 pixels.
+height: Sets the height of the button to 100 pixels.
+background-image: Specifies the URL of the background image for the button. In this case, it's set to 'images/Hotel Directory.png'.
+background-size: Specifies how the background image should be sized within the button. Here, contain is used, which means the image will be scaled to maintain its aspect ratio while fitting within the button's dimensions.
+background-repeat: Determines how the background image should be repeated if it doesn't fill the entire button. no-repeat means the image will not be repeated.
+background-position: Specifies the position of the background image within the button. center means the image will be centered horizontally and vertically.
+border: Sets the border of the button to none, removing any border.
+border-radius: Sets the border radius to 5 pixels, giving the button rounded corners.
+cursor: Specifies the type of cursor to be displayed when hovering over the button. Here, it's set to pointer, indicating that the cursor will change to a hand icon, indicating a clickable element.
+    */
 }
 
 
