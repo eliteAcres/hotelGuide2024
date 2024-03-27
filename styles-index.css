@@ -64,12 +64,12 @@ body {
 .charming-button {
     margin: 5px; /* Reduce margin */
     padding: 8px 16px; /* Adjust padding */
-    background-color: #116479;
-    color: white;
+    /*background-color: #116479;*/
+    /*color: white;*/
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 14px; /* Reduce font size */
+    font-size: 12px; /* Reduce font size */
     transition: background-color 0.3s ease;
 }
 
@@ -107,8 +107,8 @@ cursor: Specifies the type of cursor to be displayed when hovering over the butt
 
 
 .small-button {
-    width: 100px;
-    height: 70px;
+    width: 85px;
+    height: 65px;
 }
 
 .half-width {
