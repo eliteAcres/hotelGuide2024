@@ -1,9 +1,18 @@
+
 document.addEventListener("DOMContentLoaded", function () {
+
+    //var buttonsData = [
+    //    { label: "Emergency \n紧急情况", link: "images/emergencycall.png" },
+    //    { label: "TV Channel \n电视频道", link: "images/tvchannel.png" },
+    //    { label: "Earth Hour \n地球一小时", link: "images/earthhour.png" },
+    //    { label: "Energy Saving \n节能", link: "images/energysaving.png" }
+    //];
+
     var buttonsData = [
-        { label: "Emergency \n紧急情况", link: "images/emergencycall.png" },
-        { label: "TV Channel \n电视频道", link: "images/tvchannel.png" },
-        { label: "Earth Hour \n地球一小时", link: "images/earthhour.png" },
-        { label: "Energy Saving \n节能", link: "images/energysaving.png" }
+        { label: "<img src='images/emergencyButton.png'>" , link: "images/emergencycall.png" },
+        { label: "<img src='images/tvchannelButton.png'>", link: "images/tvchannel.png" },
+        { label: "<img src='images/earthhourButton.png'>", link: "images/earthhour.png" },
+        { label: "<img src='images/energyButton.png'>", link: "images/energysaving.png" }
     ];
 
     var buttonsContainer = document.getElementById("buttons-container");
@@ -11,9 +20,16 @@ document.addEventListener("DOMContentLoaded", function () {
     buttonsData.forEach(function (buttonInfo) {
         var button = document.createElement("button");
         button.className = "button";
-        button.innerText = buttonInfo.label;
+        button.innerHTML = buttonInfo.label;
+
+        button.style.background = `url(${buttonInfo.label})`; // Set the background image of the button
+        // button.style.backgroundSize = "cover"; // Make the background image cover the entire button
+        button.style.backgroundSize = "100% 100%"; // Stretch the background image to cover the entire button
+        button.style.backgroundPosition = "center"; // Center the background image
+        button.style.backgroundRepeat = "no-repeat"; // Prevent the background image from repeating
+        
         button.addEventListener("click", function () {
-            // Store the clicked image link in localStorage for retrieval in page2.html
+            // Store the clicked image link in localStorage for retrieval in page1-1.html
             localStorage.setItem("imageLink", buttonInfo.link);
             window.location.href = "page1-1.html";
         });
@@ -26,7 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "home.html";
     });
 });
-
 
 
 // page1-1.html logic

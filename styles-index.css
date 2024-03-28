@@ -1,5 +1,6 @@
 /* Reset default margin and padding for the body */
 body {
+    background-color: transparent; /* Set background color to transparent */
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,15 +12,45 @@ body {
 
 /* Center the content in a container */
 .container {
-    background-color: rgb(255, 255, 255);
+    /*background-color: rgb(255, 255, 255);
+    background-color: transparent; 
     text-align: center;
     max-width: 600px;
+    margin: 0 auto;*/
+
+
+    padding-top: 0px; /* Add padding top to reduce the gap between the header and the slideshow */
+    padding-bottom: 0px; /* Add padding bottom to reduce the gap between the slideshow and buttons */
+    background-color: transparent; /* Set background color to transparent */
+    text-align: center;
+    width: 95%; /* Adjust width to 95% of viewport */
+    max-width: 600px; /* Set maximum width to maintain readability */
     margin: 0 auto;
+    padding: 20px; /* Add padding for better spacing */
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden; /* Ensure no content overflows and reveals background */
+}
+
+/* Ensure the body's background is hidden beyond the container */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -1;
 }
 
 /* Style for the content section */
 .content {
-    background-color: rgb(255, 255, 255);
+    padding-top: 0; /* Remove top padding to reduce the gap between the header and slideshow */
+    padding-bottom: 20px; /* Add bottom padding to maintain spacing between slideshow and buttons */
+
+    /*background-color: rgb(255, 255, 255);*/
+    background-color: rgb(246, 246, 246); /*change container box color*/
     padding: 20px;
     border-radius: 10px;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
@@ -28,18 +59,26 @@ body {
     box-sizing: border-box;
 }
 
+/* Style for the content section */
+.content {
+    font-size: 16px; /* Adjust font size for better readability on small screens */
+}
+
 .content img {
-    max-width: 80%;
+    max-width: 100%; /* Ensure images don't overflow their containers */
     height: auto;
 }
 
-.content {
-    font-size: 18px;
-}
 
-.content h1,
+.content h1{
+    margin-top: 5; /* Remove margin top to reduce the gap between the header and slideshow */
+    margin-bottom: 5px; /* Add margin bottom to maintain spacing between h1 and h2 */
+    font-size: 20px; /* Adjust heading sizes for smaller screens */
+}
 .content h2 {
-    font-size: 22px;
+    margin-top: 5; /* Remove margin top to reduce the gap between the header and slideshow */
+    margin-bottom: 5px; /* Add margin bottom to maintain spacing between h1 and h2 */
+    font-size: 20px; /* Adjust heading sizes for smaller screens */
 }
 
 /* Styles for the logo section */
@@ -51,7 +90,7 @@ body {
 }
 
 .logo img {
-    width: 200px;
+    width: 200px; /* Adjust logo size for smaller screens */
     height: auto;
 }
 
@@ -66,27 +105,34 @@ body {
 .charming-button {
     margin: 5px; /* Reduce margin */
     padding: 8px 16px; /* Adjust padding */
-    /*background-color: #116479;*/
+    background-color: #f6f6f6;
     /*color: white;*/
-    border: none;
+    border: 1px solid rgb(185, 184, 184); /* Add border with thin black line */
     border-radius: 5px;
     cursor: pointer;
-    font-size: 12px; /* Reduce font size */
-    transition: background-color 0.3s ease;
+    font-size: 14px; /* Reduce font size */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add transition for transform property */
 }
 
 .charming-button:hover {
-    background-color: #0f9236;
+    background-color: #74F0B6; /* Tiffany Green (116,240,182) #74F0B6*/
+    transform: scale(1.05); /* Scale up the button by 5% when hovered */
 }
 
 
 
 
-/* adjust width and height for the 3 button */
-.large-button {
-    width: 210px; 
+
+/* adjust width and height for logo image*/
+.logo-photo {
+    /*width: 210px; 
     height: 190px; 
-    /*background-image: url('images/Hotel Directory.png'); */
+    background-image: url('images/Hotel Directory.png'); */
+
+    width: 60%; /* Make logo fill the container width */
+    height: auto; /* Adjust height automatically */
+    max-width: 200px; /* Set maximum width for better aesthetics */
+    max-height: 190px; /* Set maximum height for better aesthetics */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -96,13 +142,7 @@ body {
     
 
 
-
-
-
-
     /*
-
-
     background-size: contain; 
 
     padding: 0;
@@ -121,10 +161,65 @@ cursor: Specifies the type of cursor to be displayed when hovering over the butt
     */
 }
 
+/* cover-photo and cover-image only use for 1 image below the logo image*/
+.cover-photo {
+    position: relative;
+}
 
+.cover-image {
+    /* position: absolute; */
+    /* top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; */
+    width: 100%; /* Set width to fill container */
+    height: auto; /* Auto-adjust height to maintain aspect ratio */
+}
+
+
+/* slideshow-container, cover-image, fade, @keyframes fade -- use for multiple image below the logo image*/
+.slideshow-container {
+    margin-top: 0; /* Remove any top margin */
+    margin-bottom: 0px; /* Add margin bottom to maintain spacing between the slideshow and buttons */
+    position: relative;
+    max-width: 100%;
+    height: 200px; /* Set a fixed height for the slideshow container */
+    overflow: hidden;
+    padding-bottom: 5px; /* Add padding-bottom to reduce the space between slideshow and h1 */
+}
+
+.cover-image {
+    /*width: 100%;
+    height: auto;
+    display: none;*/
+
+    width: auto;
+    height: 100%; /* Fill the height of the container */
+    display: none;
+    object-fit: cover; /* Maintain aspect ratio and cover entire container */
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 3.0s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+
+
+/* adjust for button styles*/
 .small-button {
-    width: 85px;
-    height: 65px;
+    /*width: 85px;
+    height: 65px;*/
+
+    width: 40%; /* Set button width as a percentage for responsiveness */
+    height: auto; /* Adjust height automatically */
+    max-width: 85px; /* Set maximum width for better aesthetics */
+    max-height: 65px; /* Set maximum height for better aesthetics */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -139,8 +234,15 @@ cursor: Specifies the type of cursor to be displayed when hovering over the butt
 }
 
 .small-buttons-container {
-    margin-top: 5px; /* Adjust the margin top to reduce the vertical gap */
+    margin-top: 10px; /* Add a margin top to create space between the buttons and the slideshow */
+    display: flex;
+    justify-content: center;
 }
+
+
+
+
+
 
 
 
@@ -149,13 +251,17 @@ cursor: Specifies the type of cursor to be displayed when hovering over the butt
 
 /* Additional styles for larger screens if needed */
 @media (min-width: 768px) {
+    .container {
+        padding: 40px; /* Adjust padding for larger screens */
+    }
+
     .content {
-        font-size: 20px;
+        font-size: 18px; /* Adjust font size for larger screens */
     }
 
     .content h1,
     .content h2 {
-        font-size: 28px;
+        font-size: 24px; /* Adjust heading sizes for larger screens */
     }
 
     .logo {
@@ -163,7 +269,7 @@ cursor: Specifies the type of cursor to be displayed when hovering over the butt
     }
 
     .logo img {
-        width: 200px;
+        width: 200px; /* Adjust logo size for larger screens */
     }
 }
 
