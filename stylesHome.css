@@ -130,8 +130,8 @@ body {
 }
 
 .index-button:hover {
-    background-color: #2077b1; /* Darker blue on hover */
-    border: 2px solid rgb(61, 102, 240); /* Add a red border on hover */
+    background-color: #74F0B6; /* Darker blue on hover */
+    border: 2px solid rgb(61, 102, 240); /* Add a blue border on hover */
     transform: scale(1.05);
 }
 

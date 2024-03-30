@@ -105,9 +105,9 @@ body::after {
 .charming-button {
     margin: 5px; /* Reduce margin */
     padding: 8px 16px; /* Adjust padding */
-    background-color: #f6f6f6;
+    background-color: #3498db;
     /*color: white;*/
-    border: 1px solid rgb(185, 184, 184); /* Add border with thin black line */
+    border: 1px solid rgb(185, 184, 184);  /*Add border with thin grey line */
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px; /* Reduce font size */
@@ -117,6 +117,7 @@ body::after {
 .charming-button:hover {
     background-color: #74F0B6; /* Tiffany Green (116,240,182) #74F0B6*/
     transform: scale(1.05); /* Scale up the button by 5% when hovered */
+    border: 2px solid rgb(61, 102, 240); /* Add a blue border on hover */
 }
 
 
@@ -183,7 +184,7 @@ cursor: Specifies the type of cursor to be displayed when hovering over the butt
     margin-bottom: 0px; /* Add margin bottom to maintain spacing between the slideshow and buttons */
     position: relative;
     max-width: 100%;
-    height: 200px; /* Set a fixed height for the slideshow container */
+    height: 150px; /* Set a fixed height for the slideshow container */
     overflow: hidden;
     padding-bottom: 5px; /* Add padding-bottom to reduce the space between slideshow and h1 */
 }
@@ -219,7 +220,7 @@ cursor: Specifies the type of cursor to be displayed when hovering over the butt
     width: 40%; /* Set button width as a percentage for responsiveness */
     height: auto; /* Adjust height automatically */
     max-width: 85px; /* Set maximum width for better aesthetics */
-    max-height: 65px; /* Set maximum height for better aesthetics */
+    max-height: 70px; /* Set maximum height for better aesthetics */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -238,12 +239,6 @@ cursor: Specifies the type of cursor to be displayed when hovering over the butt
     display: flex;
     justify-content: center;
 }
-
-
-
-
-
-
 
 
 
@@ -272,4 +267,8 @@ cursor: Specifies the type of cursor to be displayed when hovering over the butt
         width: 200px; /* Adjust logo size for larger screens */
     }
 }
+
+
+
+
 
