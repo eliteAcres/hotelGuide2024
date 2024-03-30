@@ -10,6 +10,23 @@ body {
     background: linear-gradient(45deg, #f4f5f5, #f7f7f7);
 }
 
+
+header {
+    /*background: #52bedf;*/
+    background: rgb(229, 245, 249);
+    color: #106944;
+    padding: 10px; /* Adjust padding as needed */
+    /*border-bottom: 5px solid #59c9eb;*/
+}
+
+
+header h1,h2 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+
+
 /* Center the content in a container */
 .container {
     /*background-color: rgb(255, 255, 255);
