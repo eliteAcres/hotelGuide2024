@@ -10,6 +10,7 @@ body {
     margin: 0;
     padding: 0;
     /*margin-top: 0;*/
+    margin-bottom: 10px; /* Add or adjust margin-bottom */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,7 +150,7 @@ footer {
     text-align: center;
     z-index: 998; /* Lower z-index value compared to header */
     font-size: 0.7em;
-
+    margin-top: 0; /* Adjust margin-top */
 }
 
 
@@ -238,7 +239,7 @@ footer h1,p {
     margin-bottom: 20px; /* Add margin bottom to maintain spacing between the slideshow and buttons */
     border-radius: 13px; /* Adjust the border radius to create round corners */
     position: relative;
-    max-width: 90%;
+    max-width: 85%;
     height: 200px; /* Set height to auto to allow images to adjust their height automatically */
     overflow: hidden;
     /*padding-bottom: 5px; /* Add padding-bottom to reduce the space between slideshow and h1 */
