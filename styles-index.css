@@ -146,7 +146,7 @@ footer {
     width: 100%; /* Occupy the full width of the viewport */
     background-color: #0a1b49;
     color: #8be045;
-    padding: 0.5rem; /* Adjust padding as needed */
+    padding: 0.3rem; /* Adjust padding as needed */
     text-align: center;
     z-index: 998; /* Lower z-index value compared to header */
     font-size: 0.7em;
@@ -198,7 +198,7 @@ footer h1,p {
     width: 95%; /* Adjust width to 95% of viewport */
     max-width: 700px; /* Set maximum width for better aesthetics */
     margin: 0 auto;
-    padding: 20px; /* Add padding for better spacing */
+    padding: 10px; /* Add padding for better spacing */
     border-radius: 10px;
     box-sizing: border-box;
     overflow: hidden; /* Ensure no content overflows and reveals background */
@@ -310,7 +310,7 @@ footer h1,p {
 
 .charming-button {
     margin: 5px; /* Reduce margin */
-    padding: 8px 16px; /* Adjust padding */
+    padding: 4px 8px; /* Adjust padding */
     background-color: #3498db;
     /*color: white;*/
     border: 1px solid rgb(185, 184, 184);  /*Add border with thin grey line */
