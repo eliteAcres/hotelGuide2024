@@ -125,7 +125,7 @@ main {
 /* styles for buttonss section */
 .buttonss {
     min-height: 110px; /* Adjust the minimum height as needed */
-    margin-bottom: 30px; /* Add margin to create space between buttons and greeting */
+    margin-bottom: 10px; /* Add margin to create space between buttons and greeting */
 }
 
 .greeting {
