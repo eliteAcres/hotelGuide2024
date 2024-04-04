@@ -45,15 +45,16 @@ header {
     width: 100%; /* Occupy the full width of the viewport */
     background-color: #55e7e0;
     color: #0a492f;
-    padding: 1rem; /* Adjust padding as needed */
+    padding: 0.5rem; /* Adjust padding as needed */
     text-align: center;
     z-index: 999; /* Ensure it's above other content */
+    font-size: 0.9em;
 
 }
 
 
 header h1,h2 {
-    font-size: 1.2em;
+    font-size: 1.0em;
     margin: 0;
     margin-top: 0; /* Remove default margin */
 }
@@ -223,10 +224,12 @@ main {
     margin-bottom: 20px; /* Add margin bottom to maintain spacing between the slideshow and buttons */
     border-radius: 13px; /* Adjust the border radius to create round corners */
     position: relative;
-    max-width: 100%;
+    max-width: 93%;
     height: 200px; /* Set height to auto to allow images to adjust their height automatically */
     overflow: hidden;
     /*padding-bottom: 5px; /* Add padding-bottom to reduce the space between slideshow and h1 */
+    margin-left: auto; /* Set left margin to auto */
+    margin-right: auto; /* Set right margin to auto */
 }
 
 
