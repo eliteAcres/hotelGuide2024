@@ -220,11 +220,11 @@ main {
 
 /* slideshow-container, cover-image, fade, @keyframes fade -- use for multiple image below the logo image*/
 .slideshow-container {
-    margin-top: 80px; /* Adjust the margin-top value as needed */
+    margin-top: 40px; /* Adjust the margin-top value as needed */
     margin-bottom: 20px; /* Add margin bottom to maintain spacing between the slideshow and buttons */
     border-radius: 13px; /* Adjust the border radius to create round corners */
     position: relative;
-    max-width: 85%;
+    max-width: 80%;
     height: 200px; /* Set height to auto to allow images to adjust their height automatically */
     overflow: hidden;
     /*padding-bottom: 5px; /* Add padding-bottom to reduce the space between slideshow and h1 */
