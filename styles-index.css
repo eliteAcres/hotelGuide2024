@@ -188,15 +188,15 @@ footer h1,p {
     max-width: 600px;
     margin: 0 auto;*/
 
-    margin: 0 auto;
-    padding: 0 10px;
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding for better spacing */
     margin-top: 0;
     padding-top: 0px; /* Add padding top to reduce the gap between the header and the slideshow */
     padding-bottom: 0px; /* Add padding bottom to reduce the gap between the slideshow and buttons */
     background-color: transparent; /* Set background color to transparent */
     text-align: center;
     width: 95%; /* Adjust width to 95% of viewport */
-    max-width: 480px; /* Set maximum width for smartphones in portrait mode */
+    max-width: 700px; /* Set maximum width for better aesthetics */
     margin: 0 auto;
     padding: 20px; /* Add padding for better spacing */
     border-radius: 10px;
