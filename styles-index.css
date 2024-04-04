@@ -224,7 +224,7 @@ main {
     margin-bottom: 20px; /* Add margin bottom to maintain spacing between the slideshow and buttons */
     border-radius: 13px; /* Adjust the border radius to create round corners */
     position: relative;
-    max-width: 93%;
+    max-width: 85%;
     height: 200px; /* Set height to auto to allow images to adjust their height automatically */
     overflow: hidden;
     /*padding-bottom: 5px; /* Add padding-bottom to reduce the space between slideshow and h1 */
