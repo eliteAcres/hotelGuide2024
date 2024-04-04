@@ -54,21 +54,11 @@ header {
 
 
 header h1,h2 {
-    font-size: 1.0em;
+    font-size: 0.9em;
     margin: 0;
     margin-top: 0; /* Remove default margin */
 }
 
-.content h1{
-    margin-top: 5; /* Remove margin top to reduce the gap between the header and slideshow */
-    margin-bottom: 5px; /* Add margin bottom to maintain spacing between h1 and h2 */
-    font-size: 20px; /* Adjust heading sizes for smaller screens */
-}
-.content h2 {
-    margin-top: 5; /* Remove margin top to reduce the gap between the header and slideshow */
-    margin-bottom: 5px; /* Add margin bottom to maintain spacing between h1 and h2 */
-    font-size: 20px; /* Adjust heading sizes for smaller screens */
-}
 
 
 
@@ -77,7 +67,7 @@ nav {
     display: flex;
     justify-content: center; /* Center align the logo horizontally */
     align-items: center; /* Center align the logo vertically */
-    margin-bottom: 10px; /* Add margin bottom to create space between logo and headings */
+    margin-bottom: 0; /* Add margin bottom to create space between logo and headings */
 }
 
 nav img {
@@ -108,7 +98,7 @@ nav ul li a:hover {
 }
 
 main {
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -117,7 +107,7 @@ main {
 
 .hero {
     position: relative;
-    margin-top: 50px; /* Add margin to create space between header and slideshow */
+    margin-top: 40px; /* Add margin to create space between header and slideshow */
     height: auto; /* edit this to change slider image height*/
     overflow: hidden;
 }
@@ -204,8 +194,8 @@ footer h1,p {
     padding-bottom: 0px; /* Add padding bottom to reduce the gap between the slideshow and buttons */
     background-color: transparent; /* Set background color to transparent */
     text-align: center;
-    width: 90%; /* Adjust width to 95% of viewport */
-    max-width: 700px; /* Set maximum width to maintain readability */
+    width: 95%; /* Adjust width to 95% of viewport */
+    max-width: 480px; /* Set maximum width for smartphones in portrait mode */
     margin: 0 auto;
     padding: 20px; /* Add padding for better spacing */
     border-radius: 10px;
@@ -244,11 +234,11 @@ footer h1,p {
 
 /* slideshow-container, cover-image, fade, @keyframes fade -- use for multiple image below the logo image*/
 .slideshow-container {
-    margin-top: 40px; /* Adjust the margin-top value as needed */
+    margin-top: 30px; /* Adjust the margin-top value as needed */
     margin-bottom: 20px; /* Add margin bottom to maintain spacing between the slideshow and buttons */
     border-radius: 13px; /* Adjust the border radius to create round corners */
     position: relative;
-    max-width: 80%;
+    max-width: 90%;
     height: 200px; /* Set height to auto to allow images to adjust their height automatically */
     overflow: hidden;
     /*padding-bottom: 5px; /* Add padding-bottom to reduce the space between slideshow and h1 */
@@ -282,7 +272,7 @@ footer h1,p {
 /* adjust for button styles*/
 .small-button {
     width: 40%; /* Set button width as a percentage for responsiveness */
-    max-width: 85px; /* Set maximum width for better aesthetics */
+    max-width: 90px; /* Set maximum width for better aesthetics */
     /* height: auto; Remove height restriction to allow buttons to expand vertically */
     /* max-height: 85px; Remove max-height restriction */
     border: none; /* Remove border */
