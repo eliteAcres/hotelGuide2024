@@ -137,14 +137,38 @@ main {
     margin-bottom: 30px; /* Add margin to create space between buttons and greeting */
 }
 
-.Greeting {
+.greeting {
     text-align: center; /* Center-align text */
 }
-.Greeting h2,p {
+.greeting h2,p {
     font-size: 1.0em;
     margin: 0;
     margin-top: 0; /* Remove default margin */
 }
+
+
+
+footer {
+    position: fixed; /* Fixed position to keep it at the bottom */
+    bottom: 0; /* Position at the bottom */
+    left: 0; /* Align to the left */
+    width: 100%; /* Occupy the full width of the viewport */
+    background-color: #0a1b49;
+    color: #8be045;
+    padding: 0.5rem; /* Adjust padding as needed */
+    text-align: center;
+    z-index: 998; /* Lower z-index value compared to header */
+    font-size: 0.7em;
+
+}
+
+
+footer h1,p {
+    font-size: 1.0em;
+    margin: 0;
+    margin-top: 0; /* Remove default margin */
+}
+
 
 
 
@@ -180,7 +204,7 @@ main {
     padding-bottom: 0px; /* Add padding bottom to reduce the gap between the slideshow and buttons */
     background-color: transparent; /* Set background color to transparent */
     text-align: center;
-    width: 95%; /* Adjust width to 95% of viewport */
+    width: 90%; /* Adjust width to 95% of viewport */
     max-width: 700px; /* Set maximum width to maintain readability */
     margin: 0 auto;
     padding: 20px; /* Add padding for better spacing */
