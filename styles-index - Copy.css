@@ -1,0 +1,286 @@
+/* Reset default margin and padding for the body */
+body {
+    background-color: transparent; /* Set background color to transparent */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #f4f5f5, #f7f7f7);
+}
+
+
+header {
+    /*background: #52bedf;*/
+    background: rgb(229, 245, 249);
+    color: #106944;
+    padding: 10px; /* Adjust padding as needed */
+    /*border-bottom: 5px solid #59c9eb;*/
+}
+
+
+header h1,h2 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+
+
+/* Center the content in a container */
+.container {
+    /*background-color: rgb(255, 255, 255);
+    background-color: transparent; 
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;*/
+
+
+    padding-top: 0px; /* Add padding top to reduce the gap between the header and the slideshow */
+    padding-bottom: 0px; /* Add padding bottom to reduce the gap between the slideshow and buttons */
+    background-color: transparent; /* Set background color to transparent */
+    text-align: center;
+    width: 95%; /* Adjust width to 95% of viewport */
+    max-width: 600px; /* Set maximum width to maintain readability */
+    margin: 0 auto;
+    padding: 20px; /* Add padding for better spacing */
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden; /* Ensure no content overflows and reveals background */
+}
+
+/* Ensure the body's background is hidden beyond the container */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -1;
+}
+
+/* Style for the content section */
+.content {
+    padding-top: 0; /* Remove top padding to reduce the gap between the header and slideshow */
+    padding-bottom: 20px; /* Add bottom padding to maintain spacing between slideshow and buttons */
+
+    /*background-color: rgb(255, 255, 255);*/
+    background-color: rgb(246, 246, 246); /*change container box color*/
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Style for the content section */
+.content {
+    font-size: 16px; /* Adjust font size for better readability on small screens */
+}
+
+.content img {
+    max-width: 100%; /* Ensure images don't overflow their containers */
+    height: auto;
+}
+
+
+.content h1{
+    margin-top: 5; /* Remove margin top to reduce the gap between the header and slideshow */
+    margin-bottom: 5px; /* Add margin bottom to maintain spacing between h1 and h2 */
+    font-size: 20px; /* Adjust heading sizes for smaller screens */
+}
+.content h2 {
+    margin-top: 5; /* Remove margin top to reduce the gap between the header and slideshow */
+    margin-bottom: 5px; /* Add margin bottom to maintain spacing between h1 and h2 */
+    font-size: 20px; /* Adjust heading sizes for smaller screens */
+}
+
+/* Styles for the logo section */
+.logo {
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.logo img {
+    width: 200px; /* Adjust logo size for smaller screens */
+    height: auto;
+}
+
+/* Styles for the main buttons container */
+.large-button-container,
+.small-buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.charming-button {
+    margin: 5px; /* Reduce margin */
+    padding: 8px 16px; /* Adjust padding */
+    background-color: #3498db;
+    /*color: white;*/
+    border: 1px solid rgb(185, 184, 184);  /*Add border with thin grey line */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Reduce font size */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add transition for transform property */
+}
+
+.charming-button:hover {
+    background-color: #74F0B6; /* Tiffany Green (116,240,182) #74F0B6*/
+    transform: scale(1.05); /* Scale up the button by 5% when hovered */
+    border: 2px solid rgb(61, 102, 240); /* Add a blue border on hover */
+}
+
+
+
+
+
+/* adjust width and height for logo image*/
+.logo-photo {
+    /*width: 210px; 
+    height: 190px; 
+    background-image: url('images/Hotel Directory.png'); */
+
+    width: 60%; /* Make logo fill the container width */
+    height: auto; /* Adjust height automatically */
+    max-width: 200px; /* Set maximum width for better aesthetics */
+    max-height: 190px; /* Set maximum height for better aesthetics */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+
+
+    /*
+    background-size: contain; 
+
+    padding: 0;
+    margin: 0;
+    
+
+width: Sets the width of the button to 210 pixels.
+height: Sets the height of the button to 100 pixels.
+background-image: Specifies the URL of the background image for the button. In this case, it's set to 'images/Hotel Directory.png'.
+background-size: Specifies how the background image should be sized within the button. Here, contain is used, which means the image will be scaled to maintain its aspect ratio while fitting within the button's dimensions.
+background-repeat: Determines how the background image should be repeated if it doesn't fill the entire button. no-repeat means the image will not be repeated.
+background-position: Specifies the position of the background image within the button. center means the image will be centered horizontally and vertically.
+border: Sets the border of the button to none, removing any border.
+border-radius: Sets the border radius to 5 pixels, giving the button rounded corners.
+cursor: Specifies the type of cursor to be displayed when hovering over the button. Here, it's set to pointer, indicating that the cursor will change to a hand icon, indicating a clickable element.
+    */
+}
+
+/* cover-photo and cover-image only use for 1 image below the logo image*/
+.cover-photo {
+    position: relative;
+}
+
+.cover-image {
+    /* position: absolute; */
+    /* top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; */
+    width: 100%; /* Set width to fill container */
+    height: auto; /* Auto-adjust height to maintain aspect ratio */
+}
+
+
+/* slideshow-container, cover-image, fade, @keyframes fade -- use for multiple image below the logo image*/
+.slideshow-container {
+    margin-top: 0; /* Remove any top margin */
+    margin-bottom: 0px; /* Add margin bottom to maintain spacing between the slideshow and buttons */
+    position: relative;
+    max-width: 100%;
+    height: 170px; /* Set a fixed height for the slideshow container */
+    overflow: hidden;
+    padding-bottom: 5px; /* Add padding-bottom to reduce the space between slideshow and h1 */
+}
+
+.cover-image {
+    /*width: 100%;
+    height: auto;
+    display: none;*/
+
+    width: auto;
+    height: 100%; /* Fill the height of the container */
+    display: none;
+    object-fit: cover; /* Maintain aspect ratio and cover entire container */
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 3.0s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+
+
+/* adjust for button styles*/
+.small-button {
+    /*width: 85px;
+    height: 65px;*/
+
+    width: 40%; /* Set button width as a percentage for responsiveness */
+    height: auto; /* Adjust height automatically */
+    max-width: 85px; /* Set maximum width for better aesthetics */
+    max-height: 70px; /* Set maximum height for better aesthetics */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.half-width {
+    width: 50px;
+}
+
+.large-button-container {
+    margin-bottom: 5px; /* Adjust the margin bottom to reduce the vertical gap */
+}
+
+.small-buttons-container {
+    margin-top: 10px; /* Add a margin top to create space between the buttons and the slideshow */
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+/* Additional styles for larger screens if needed */
+@media (min-width: 768px) {
+    .container {
+        padding: 40px; /* Adjust padding for larger screens */
+    }
+
+    .content {
+        font-size: 18px; /* Adjust font size for larger screens */
+    }
+
+    .content h1,
+    .content h2 {
+        font-size: 24px; /* Adjust heading sizes for larger screens */
+    }
+
+    .logo {
+        padding: 30px 0;
+    }
+
+    .logo img {
+        width: 200px; /* Adjust logo size for larger screens */
+    }
+}

@@ -1,52 +1,22 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+
 /* Reset default margin and padding for the body */
 body {
     background-color: transparent; /* Set background color to transparent */
     margin: 0;
     padding: 0;
+    /*margin-top: 0;*/
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(45deg, #f4f5f5, #f7f7f7);
-}
 
-
-header {
-    /*background: #52bedf;*/
-    background: rgb(229, 245, 249);
-    color: #106944;
-    padding: 10px; /* Adjust padding as needed */
-    /*border-bottom: 5px solid #59c9eb;*/
-}
-
-
-header h1,h2 {
-    font-size: 1.2em;
-    margin: 0;
-}
-
-
-
-/* Center the content in a container */
-.container {
-    /*background-color: rgb(255, 255, 255);
-    background-color: transparent; 
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto;*/
-
-
-    padding-top: 0px; /* Add padding top to reduce the gap between the header and the slideshow */
-    padding-bottom: 0px; /* Add padding bottom to reduce the gap between the slideshow and buttons */
-    background-color: transparent; /* Set background color to transparent */
-    text-align: center;
-    width: 95%; /* Adjust width to 95% of viewport */
-    max-width: 600px; /* Set maximum width to maintain readability */
-    margin: 0 auto;
-    padding: 20px; /* Add padding for better spacing */
-    border-radius: 10px;
-    box-sizing: border-box;
-    overflow: hidden; /* Ensure no content overflows and reveals background */
+    font-family: Arial, sans-serif;
 }
 
 /* Ensure the body's background is hidden beyond the container */
@@ -61,31 +31,32 @@ body::after {
     z-index: -1;
 }
 
-/* Style for the content section */
-.content {
-    padding-top: 0; /* Remove top padding to reduce the gap between the header and slideshow */
-    padding-bottom: 20px; /* Add bottom padding to maintain spacing between slideshow and buttons */
 
-    /*background-color: rgb(255, 255, 255);*/
-    background-color: rgb(246, 246, 246); /*change container box color*/
-    padding: 20px;
-    border-radius: 10px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-    box-shadow: 0 0 0px rgba(255, 255, 255, 0);
-    width: 100%;
-    box-sizing: border-box;
+
+header {
+    /*background: #52bedf;*/
+    /*background: rgb(229, 245, 249);*/
+
+    /*border-bottom: 5px solid #59c9eb;*/
+
+    position: fixed; /* Fixed position to keep it at the top */
+    top: 0; /* Position at the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Occupy the full width of the viewport */
+    background-color: #55e7e0;
+    color: #0a492f;
+    padding: 1rem; /* Adjust padding as needed */
+    text-align: center;
+    z-index: 999; /* Ensure it's above other content */
+
 }
 
-/* Style for the content section */
-.content {
-    font-size: 16px; /* Adjust font size for better readability on small screens */
-}
 
-.content img {
-    max-width: 100%; /* Ensure images don't overflow their containers */
-    height: auto;
+header h1,h2 {
+    font-size: 1.2em;
+    margin: 0;
+    margin-top: 0; /* Remove default margin */
 }
-
 
 .content h1{
     margin-top: 5; /* Remove margin top to reduce the gap between the header and slideshow */
@@ -97,6 +68,84 @@ body::after {
     margin-bottom: 5px; /* Add margin bottom to maintain spacing between h1 and h2 */
     font-size: 20px; /* Adjust heading sizes for smaller screens */
 }
+
+
+
+
+nav {
+    display: flex;
+    justify-content: center; /* Center align the logo horizontally */
+    align-items: center; /* Center align the logo vertically */
+    margin-bottom: 10px; /* Add margin bottom to create space between logo and headings */
+}
+
+nav img {
+    width: 150px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    /*color: #f8f9fa;  Light gray hover color */
+    color: #f00; /* Change color on hover as desired */
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+
+
+.hero {
+    position: relative;
+    margin-top: 50px; /* Add margin to create space between header and slideshow */
+    height: auto; /* edit this to change slider image height*/
+    overflow: hidden;
+}
+
+.about {
+    text-align: center; /* Center-align text */
+}
+.about h1,h2 {
+    font-size: 1.2em;
+    margin: 0;
+    margin-top: 0; /* Remove default margin */
+}
+
+/* styles for buttonss section */
+.buttonss {
+    min-height: 110px; /* Adjust the minimum height as needed */
+    margin-bottom: 30px; /* Add margin to create space between buttons and greeting */
+}
+
+.Greeting {
+    text-align: center; /* Center-align text */
+}
+.Greeting h2,p {
+    font-size: 1.0em;
+    margin: 0;
+    margin-top: 0; /* Remove default margin */
+}
+
+
 
 /* Styles for the logo section */
 .logo {
@@ -111,100 +160,75 @@ body::after {
     height: auto;
 }
 
-/* Styles for the main buttons container */
-.large-button-container,
-.small-buttons-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+
+
+
+
+/* Center the content in a container */
+.container {
+    /*background-color: rgb(255, 255, 255);
+    background-color: transparent; 
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;*/
+
+    margin: 0 auto;
+    padding: 0 10px;
+    margin-top: 0;
+    padding-top: 0px; /* Add padding top to reduce the gap between the header and the slideshow */
+    padding-bottom: 0px; /* Add padding bottom to reduce the gap between the slideshow and buttons */
+    background-color: transparent; /* Set background color to transparent */
+    text-align: center;
+    width: 95%; /* Adjust width to 95% of viewport */
+    max-width: 700px; /* Set maximum width to maintain readability */
+    margin: 0 auto;
+    padding: 20px; /* Add padding for better spacing */
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden; /* Ensure no content overflows and reveals background */
 }
 
-.charming-button {
-    margin: 5px; /* Reduce margin */
-    padding: 8px 16px; /* Adjust padding */
-    background-color: #3498db;
-    /*color: white;*/
-    border: 1px solid rgb(185, 184, 184);  /*Add border with thin grey line */
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px; /* Reduce font size */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Add transition for transform property */
-}
-
-.charming-button:hover {
-    background-color: #74F0B6; /* Tiffany Green (116,240,182) #74F0B6*/
-    transform: scale(1.05); /* Scale up the button by 5% when hovered */
-    border: 2px solid rgb(61, 102, 240); /* Add a blue border on hover */
-}
 
 
-
-
-
-/* adjust width and height for logo image*/
-.logo-photo {
-    /*width: 210px; 
-    height: 190px; 
-    background-image: url('images/Hotel Directory.png'); */
-
-    width: 60%; /* Make logo fill the container width */
-    height: auto; /* Adjust height automatically */
-    max-width: 200px; /* Set maximum width for better aesthetics */
-    max-height: 190px; /* Set maximum height for better aesthetics */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+/* Style for the content section */
+.content {
+    padding-top: 0; /* Remove top padding to reduce the gap between the header and slideshow */
+    padding-bottom: 20px; /* Add bottom padding to maintain spacing between slideshow and buttons */
     
-
-
-    /*
-    background-size: contain; 
-
-    padding: 0;
-    margin: 0;
+    padding: 20px;
+    margin-top: 120px;
+    text-align: center;
+    /*background-color: rgb(255, 255, 255);*/
+    background-color: rgb(246, 246, 246); /*change container box color*/
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0);
     
+    /*width: 100%;*/
+    /*box-sizing: border-box;*/
+    /*font-size: 16px; /* Adjust font size for better readability on small screens */
 
-width: Sets the width of the button to 210 pixels.
-height: Sets the height of the button to 100 pixels.
-background-image: Specifies the URL of the background image for the button. In this case, it's set to 'images/Hotel Directory.png'.
-background-size: Specifies how the background image should be sized within the button. Here, contain is used, which means the image will be scaled to maintain its aspect ratio while fitting within the button's dimensions.
-background-repeat: Determines how the background image should be repeated if it doesn't fill the entire button. no-repeat means the image will not be repeated.
-background-position: Specifies the position of the background image within the button. center means the image will be centered horizontally and vertically.
-border: Sets the border of the button to none, removing any border.
-border-radius: Sets the border radius to 5 pixels, giving the button rounded corners.
-cursor: Specifies the type of cursor to be displayed when hovering over the button. Here, it's set to pointer, indicating that the cursor will change to a hand icon, indicating a clickable element.
-    */
 }
 
-/* cover-photo and cover-image only use for 1 image below the logo image*/
-.cover-photo {
-    position: relative;
-}
 
-.cover-image {
-    /* position: absolute; */
-    /* top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; */
-    width: 100%; /* Set width to fill container */
-    height: auto; /* Auto-adjust height to maintain aspect ratio */
+.content img {
+    max-width: 100%; /* Ensure images don't overflow their containers */
+    height: auto;
 }
 
 
 /* slideshow-container, cover-image, fade, @keyframes fade -- use for multiple image below the logo image*/
 .slideshow-container {
-    margin-top: 0; /* Remove any top margin */
-    margin-bottom: 0px; /* Add margin bottom to maintain spacing between the slideshow and buttons */
+    margin-top: 80px; /* Adjust the margin-top value as needed */
+    margin-bottom: 20px; /* Add margin bottom to maintain spacing between the slideshow and buttons */
+    border-radius: 13px; /* Adjust the border radius to create round corners */
     position: relative;
     max-width: 100%;
-    height: 170px; /* Set a fixed height for the slideshow container */
+    height: 200px; /* Set height to auto to allow images to adjust their height automatically */
     overflow: hidden;
-    padding-bottom: 5px; /* Add padding-bottom to reduce the space between slideshow and h1 */
+    /*padding-bottom: 5px; /* Add padding-bottom to reduce the space between slideshow and h1 */
 }
+
 
 .cover-image {
     /*width: 100%;
@@ -228,37 +252,61 @@ cursor: Specifies the type of cursor to be displayed when hovering over the butt
 }
 
 
-
 /* adjust for button styles*/
 .small-button {
-    /*width: 85px;
-    height: 65px;*/
-
     width: 40%; /* Set button width as a percentage for responsiveness */
-    height: auto; /* Adjust height automatically */
     max-width: 85px; /* Set maximum width for better aesthetics */
-    max-height: 70px; /* Set maximum height for better aesthetics */
+    /* height: auto; Remove height restriction to allow buttons to expand vertically */
+    /* max-height: 85px; Remove max-height restriction */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Set cursor to pointer */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add transition for transform property */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.half-width {
-    width: 50px;
-}
-
-.large-button-container {
-    margin-bottom: 5px; /* Adjust the margin bottom to reduce the vertical gap */
-}
 
 .small-buttons-container {
-    margin-top: 10px; /* Add a margin top to create space between the buttons and the slideshow */
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 
+.small-buttons-container .charming-button {
+    position: relative;
+    overflow: hidden;
+    width: auto; /* Adjust button width automatically based on content */
+    height: auto; /* Adjust button height automatically based on content */
+    padding: 0; /* Remove padding to allow images to fill the button */
+}
 
+.small-buttons-container .charming-button img {
+    width: 100%; /* Ensure the image fills the entire width of the button */
+    height: 100%; /* Ensure the image fills the entire height of the button */
+    object-fit: cover; /* Maintain aspect ratio and cover entire button */
+    padding: 5px; /* Add padding to create space between the image and the button edges */
+    box-sizing: border-box; /* Include padding in the total width and height of the image */
+}
 
+.charming-button {
+    margin: 5px; /* Reduce margin */
+    padding: 8px 16px; /* Adjust padding */
+    background-color: #3498db;
+    /*color: white;*/
+    border: 1px solid rgb(185, 184, 184);  /*Add border with thin grey line */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Reduce font size */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add transition for transform property */
+}
+
+.charming-button:hover {
+    background-color: #74F0B6; /* Tiffany Green (116,240,182) #74F0B6*/
+    transform: scale(1.05); /* Scale up the button by 5% when hovered */
+    border: 2px solid rgb(61, 102, 240); /* Add a blue border on hover */
+}
 
 
 /* Additional styles for larger screens if needed */
@@ -284,6 +332,75 @@ cursor: Specifies the type of cursor to be displayed when hovering over the butt
         width: 200px; /* Adjust logo size for larger screens */
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*already remove the logo image*/
+/* adjust width and height for logo image*/
+.logo-photo {
+    /*width: 210px; 
+    height: 190px; 
+    background-image: url('images/Hotel Directory.png'); */
+
+    width: 60%; /* Make logo fill the container width */
+    height: auto; /* Adjust height automatically */
+    max-width: 200px; /* Set maximum width for better aesthetics */
+    max-height: 190px; /* Set maximum height for better aesthetics */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+/* cover-photo and cover-image only use for 1 image below the logo image*/
+.cover-photo {
+    position: relative;
+}
+/* currently no use for this*/
+
+
+
+.half-width {
+    width: 50px;
+}
+
+.large-button-container {
+    margin-bottom: 5px; /* Adjust the margin bottom to reduce the vertical gap */
+}
+
+.small-buttons-container {
+    margin-top: 10px; /* Add a margin top to create space between the buttons and the slideshow */
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Styles for the main buttons container */
+.large-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
 
 
 
