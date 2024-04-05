@@ -397,17 +397,53 @@ footer h1,p {
     }
 
     .logo {
-        padding: 30px 0;
+        padding: 20px 0;
     }
 
     .logo img {
         width: 200px; /* Adjust logo size for larger screens */
     }
+
+    nav img {
+        width: 180px; /* Adjust logo size */
+        height: auto; /* Maintain aspect ratio */
+    }
 }
 
 
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 20px; /* Increase font size for better readability */
+    }
+
+    header {
+        padding: 1rem 2rem; /* Increase padding for better spacing */
+    }
+
+    header h1,h2 {
+        font-size: 1.3em;
+        margin: 0;
+        margin-top: 0; /* Remove default margin */
+    }
+
+    .header-text {
+        text-align: right; /* Align text to the right */
+        max-width: 55%; /* Adjust the maximum width of the container */
+        padding-right: 100px; /* Add padding to create space between the text and the right edge */
+    
+    }
+
+    .container {
+        max-width: 1000px; /* Adjust maximum width for better layout on larger screens */
+    }
 
 
+    .slideshow-container {
+        margin-top: 30px; /* Adjust the margin-top value as needed */
+
+    }
+    /* Add more styles as needed */
+}
 
 
 
