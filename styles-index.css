@@ -128,7 +128,7 @@ main {
 
 .hero {
     position: relative;
-    margin-top: 40px; /* Add margin to create space between header and slideshow */
+    margin-top: 10px; /* Add margin to create space between header and slideshow */
     height: auto; /* edit this to change slider image height*/
     overflow: hidden;
 }
@@ -150,7 +150,7 @@ main {
 
 .greeting {
     text-align: center; /* Center-align text */
-    margin-top: 20px; /* Adjust margin-top */
+    margin-top: 50px; /* Adjust margin-top */
     color: #0a1b49;
 }
 .greeting h1,h2 {
