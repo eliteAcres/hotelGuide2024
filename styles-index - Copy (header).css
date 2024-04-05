@@ -37,21 +37,8 @@ body::after {
 header {
     /*background: #52bedf;*/
     /*background: rgb(229, 245, 249);*/
+
     /*border-bottom: 5px solid #59c9eb;*/
-
-
-    /*position: fixed; /* Fixed position to keep it at the top */
-    /*top: 0; /* Position at the top */
-    /*left: 0; /* Align to the left */
-    /*width: 100%; /* Occupy the full width of the viewport */
-    /*background-color: #55e7e0;
-    color: #0a492f;
-    padding: 0.5rem; /* Adjust padding as needed */
-    /*text-align: center;
-    z-index: 999; /* Ensure it's above other content */
-    /*font-size: 0.9em;*/
-
-
 
     position: fixed; /* Fixed position to keep it at the top */
     top: 0; /* Position at the top */
@@ -60,26 +47,19 @@ header {
     background-color: #55e7e0;
     color: #0a492f;
     padding: 0.5rem; /* Adjust padding as needed */
-    display: flex; /* Add flex display to align items horizontally */
-    justify-content: space-between; /* Space items evenly */
-    align-items: center; /* Center align items vertically */
+    text-align: center;
     z-index: 999; /* Ensure it's above other content */
     font-size: 0.9em;
+
 }
 
 
 header h1,h2 {
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin: 0;
     margin-top: 0; /* Remove default margin */
 }
 
-.header-text {
-    text-align: right; /* Align text to the right */
-    max-width: 55%; /* Adjust the maximum width of the container */
-    padding-right: 20px; /* Add padding to create space between the text and the right edge */
-
-}
 
 
 
@@ -150,8 +130,6 @@ main {
 
 .greeting {
     text-align: center; /* Center-align text */
-    margin-top: 20px; /* Adjust margin-top */
-    color: #0a1b49;
 }
 .greeting h1,h2 {
     font-size: 1.0em;
@@ -257,24 +235,18 @@ footer h1,p {
 
 /* slideshow-container, cover-image, fade, @keyframes fade -- use for multiple image below the logo image*/
 .slideshow-container {
-    margin-top: 0px; /* Adjust the margin-top value as needed */
+    margin-top: 30px; /* Adjust the margin-top value as needed */
     margin-bottom: 20px; /* Add margin bottom to maintain spacing between the slideshow and buttons */
     border-radius: 13px; /* Adjust the border radius to create round corners */
     position: relative;
     max-width: 85%;
-    height: auto; /* Set height to auto to allow images to adjust their height automatically */
+    height: 200px; /* Set height to auto to allow images to adjust their height automatically */
     overflow: hidden;
     /*padding-bottom: 5px; /* Add padding-bottom to reduce the space between slideshow and h1 */
     margin-left: auto; /* Set left margin to auto */
     margin-right: auto; /* Set right margin to auto */
 }
 
-.slideshow-container img {
-    width: 100%; /* Ensure the image width covers the entire container */
-    height: auto; /* Allow the image to adjust its height automatically while maintaining aspect ratio */
-    object-fit: cover; /* Maintain aspect ratio and cover entire container */
-    display: block; /* Ensure the image is displayed as a block element */
-}
 
 .cover-image {
     /*width: 100%;
@@ -301,7 +273,7 @@ footer h1,p {
 /* adjust for button styles*/
 .small-button {
     width: 40%; /* Set button width as a percentage for responsiveness */
-    max-width: 60px; /* Set maximum width for better aesthetics */
+    max-width: 90px; /* Set maximum width for better aesthetics */
     /* height: auto; Remove height restriction to allow buttons to expand vertically */
     /* max-height: 85px; Remove max-height restriction */
     border: none; /* Remove border */
@@ -326,8 +298,6 @@ footer h1,p {
     width: auto; /* Adjust button width automatically based on content */
     height: auto; /* Adjust button height automatically based on content */
     padding: 0; /* Remove padding to allow images to fill the button */
-
-    margin-right: 25px; /* Adjust margin-right to increase or decrease the gap between buttons */
 }
 
 .small-buttons-container .charming-button img {
@@ -341,44 +311,20 @@ footer h1,p {
 .charming-button {
     margin: 5px; /* Reduce margin */
     padding: 4px 8px; /* Adjust padding */
-    /*background-color: #3498db;*/
-    background-color: transparent;
+    background-color: #3498db;
     /*color: white;*/
-    border: 0px solid rgb(185, 184, 184);  /*Add border with thin grey line */
-    border-radius: 20px;
+    border: 1px solid rgb(185, 184, 184);  /*Add border with thin grey line */
+    border-radius: 5px;
     cursor: pointer;
     font-size: 14px; /* Reduce font size */
     transition: background-color 0.3s ease, transform 0.2s ease; /* Add transition for transform property */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add outer shadow */
 }
 
 .charming-button:hover {
     background-color: #74F0B6; /* Tiffany Green (116,240,182) #74F0B6*/
     transform: scale(1.05); /* Scale up the button by 5% when hovered */
-    border: 0px solid rgb(61, 102, 240); /* Add a blue border on hover */
+    border: 2px solid rgb(61, 102, 240); /* Add a blue border on hover */
 }
-
-
-/*Short name below the button*/
-.button-container {
-    text-align: center; /* Center-align the content within the container */
-}
-
-.button-container .charming-button {
-    margin-bottom: 10px; /* Add margin between the button and the paragraph */
-}
-
-.button-container p {
-    margin: 5px auto 0; /* Adjust margin to create space between the button and the paragraph */
-    font-size: 12px; /* Adjust font size as needed */
-    text-align: center; /* Center-align the paragraph */
-
-    margin-right: 20px; /* Adjust margin-right to increase or decrease the gap between buttons */
-}
-
-
-
-
 
 
 /* Additional styles for larger screens if needed */
