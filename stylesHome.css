@@ -1,20 +1,149 @@
 /* Reset default margin and padding for the body */
-body {
+
+html, body {
     margin: 0;
     padding: 0;
+}
+
+body {
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Ensure elements are stacked vertically */
+    
+    /*justify-content: center;
     align-items: center;
     min-height: 100vh;
     /* background-color: #f2f2f2; */
     background: linear-gradient(45deg, #f4f5f5, #f7f7f7);
 }
 
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text within the main container */
+    flex-grow: 1; /* Allow main content to expand to fill remaining space */
+}
+
+header {
+    background-color: rgb(126, 126, 126);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%; /* Ensure header spans the full width */
+}
+
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    height: 40px; /* Adjust height as needed */
+    margin-right: 45px; /* Adjust margin as needed */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 8px;
+
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    /*color: #f8f9fa;  Light gray hover color */
+    color: #f00; /* Change color on hover as desired */
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    width: 100%; /* Ensure main spans the full width */
+}
+
+
+.hero {
+    position: relative;
+    height: 30vh; /* Change to percentage-based height */
+    /*height: 150px; /* edit this to change slider image height*/
+    overflow: hidden;
+    margin-bottom: 0; /* Add this line to adjust the margin from the bottom */
+    width: 100%;
+    max-width: 100%; /* Ensure the hero section spans the full width */
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto; /* Ensure images maintain aspect ratio */
+    vertical-align: middle;
+}
+
+/* Additional styles for larger screens if needed */
+@media (min-width: 768px) {
+    .hero {
+        position: relative;
+        height: 90vh; /* Change to percentage-based height */
+        overflow: hidden;
+        margin-bottom: 0; /* Add this line to adjust the margin from the bottom */
+        width: 100%; /* Ensure slideshow spans the full width */
+        padding: 0; /* Remove any default padding */
+    }
+
+    .slideshow-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0; /* Remove any default margins */
+    }
+
+    .mySlides img {
+        width: 100%; /* Set width to 100% to cover the full width */
+        height: auto; /* Ensure images maintain aspect ratio */
+    }
+}
+
+
+
+
+
+
 /* Center the content in a container */
 .container {
-    text-align: center;
-    max-width: 600px;
+    /*max-width: 600px;*/
     margin: 0 auto;
+    
 }
 
 /* Style for the content section */
@@ -114,6 +243,18 @@ body {
     margin-top: 20px; /* Add margin between content and buttons */
 }
 
+/* Adjustments for larger screens if needed */
+@media (min-width: 768px) {
+    .container {
+        max-width: 800px; /* Increase max-width for larger screens */
+    }
+
+    #main-buttons-container {
+        flex-direction: row; /* Arrange buttons horizontally on larger screens */
+    }
+}
+
+
 
 /* Button style for index.html */
 .index-button {
@@ -134,6 +275,24 @@ body {
     border: 2px solid rgb(61, 102, 240); /* Add a blue border on hover */
     transform: scale(1.05);
 }
+
+
+/* Adjust the size of the images inside the buttons */
+#index-buttons-container img {
+    width: 70px; /* Set initial width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Define a media query for larger screens */
+@media (min-width: 768px) {
+    #main-buttons-container img {
+        width: 160px; /* Increase width for larger screens */
+    }
+}
+
+
+
+
 
 
 
@@ -165,6 +324,86 @@ body {
         padding: 20px 40px; /* Adjust padding for larger screens */
     }
 }
+
+
+
+
+
+
+
+
+
+.small-buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.small-buttons-container .charming-button {
+    position: relative;
+    overflow: hidden;
+    width: auto; /* Adjust button width automatically based on content */
+    height: auto; /* Adjust button height automatically based on content */
+    padding: 0; /* Remove padding to allow images to fill the button */
+
+    margin-right: 25px; /* Adjust margin-right to increase or decrease the gap between buttons */
+}
+
+.charming-button {
+    margin: 5px; /* Reduce margin */
+    padding: 6px 10px; /* Adjust padding */
+    /*background-color: #3498db;*/
+    background-color: transparent;
+    /*color: white;*/
+    border: 0px solid rgb(185, 184, 184);  /*Add border with thin grey line */
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px; /* Reduce font size */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add transition for transform property */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add outer shadow */
+}
+
+.charming-button:hover {
+    background-color: #74F0B6; /* Tiffany Green (116,240,182) #74F0B6*/
+    transform: scale(1.05); /* Scale up the button by 5% when hovered */
+    border: 0px solid rgb(61, 102, 240); /* Add a blue border on hover */
+}
+
+
+/*Short name below the button*/
+.button-container {
+    text-align: center; /* Center-align the content within the container */
+}
+
+.button-container .charming-button {
+    margin-bottom: 10px; /* Add margin between the button and the paragraph */
+}
+
+.button-container p {
+    margin: 5px auto 0; /* Adjust margin to create space between the button and the paragraph */
+    font-size: 12px; /* Adjust font size as needed */
+    text-align: center; /* Center-align the paragraph */
+
+    margin-right: 20px; /* Adjust margin-right to increase or decrease the gap between buttons */
+}
+
+
+
+/* Define a class for the image inside the button */
+.button-container img {
+    width: auto; /* Allow the image to adjust its width based on the available space */
+    height: 100%; /* Ensure the image fills the height of the button */
+}
+
+/* Define a media query for larger screens */
+@media (min-width: 768px) {
+    .button-container img {
+        width: auto; /* Allow the image to adjust its width based on the available space */
+        height: 100%; /* Ensure the image fills the height of the button */
+    }
+}
+
+
 
 
 

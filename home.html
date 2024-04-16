@@ -8,39 +8,89 @@
     <link rel="stylesheet" href="stylesHome.css">
 </head>
 
-<body style="background-image: url('images/.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+<body>
+    <header>
+        <nav>
+            <a href="home.html"><img src="images/seaviewhotel logo1.png" alt=""></a>
+            <ul>
+                <li><a href="page1.html">Hotel Guide</a></li>
+                <li><a href="page4.html">Surrounding</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images/hotel4.png" style="width:100%">
+                </div>
+                <!-- Add more images here -->
+            </div>
+        </section>
 
-    <div class="container">
-        <div class="logo">
-            <!-- <img src="images/seaviewhotel logo1.png" alt="Logo">-->
-        </div>
-        <div class="content">
-            <img src="images/seaviewhotel logo1.png" alt="Content">
-            <h1>Welcome to Semporna Seaview Hotel</h1>
-            <h2>欢迎来到仙本那海景酒店</h2>
-            <div id="main-buttons-container">
-                <!-- Home button -->
-                <button id="homeButton">Home 首页</button>
+        <section>
+            <div class="container">
+                <div class="logo">
+                    <!-- <img src="images/seaviewhotel logo1.png" alt="Logo">-->
+                </div>
+                <div class="content">
+                    <!-- <img src="images/seaviewhotel logo1.png" alt="Content">-->
+                    <h1>Welcome to Semporna Seaview Hotel</h1>
+                    <h2>欢迎来到仙本那海景酒店</h2>
+                    <div id="main-buttons-container">
+                        <!-- Home button 
+                        <button id="homeButton">Home 首页</button>-->
+        
+                        <button class="index-button" onclick="window.location.href='page1.html'">
+                            <img src="images/hotelguide.png" alt="home">
+                        </button>
+                        <button class="index-button" onclick="window.location.href='page4.html'">
+                            <img src="images/surrounding.png" alt="wechat">
+                        </button>
+                        <button class="index-button" onclick="window.location.href='https://forms.zohopublic.com/seaviewmanage/form/ServiceOrderForm/formperma/x1VK-1tJwsQDQPLb6WPdRkC7nQmYJno1Ap-38ZWgbzA'">
+                            <img src="images/roomservice.png" alt="whatsapp">
+                        </button>
+                        <button class="index-button" onclick="window.location.href='https://forms.office.com/r/QW32gJv71w'">
+                            <img src="images/suggestionform.png" alt="whatsapp">
+                        </button>
+                    </div>  
+                </div>
+        
+            </div>
+        </section>
 
-                <button class="index-button" onclick="window.location.href='page1.html'">
-                    <img src="images/hotelguide.png" alt="home">
-                </button>
-                <button class="index-button" onclick="window.location.href='page4.html'">
-                    <img src="images/surrounding.png" alt="wechat">
-                </button>
-                <button class="index-button" onclick="window.location.href='https://forms.zohopublic.com/seaviewmanage/form/ServiceOrderForm/formperma/x1VK-1tJwsQDQPLb6WPdRkC7nQmYJno1Ap-38ZWgbzA'">
-                    <img src="images/roomservice.png" alt="whatsapp">
-                </button>
-                <button class="index-button" onclick="window.location.href='https://forms.office.com/r/QW32gJv71w'">
-                    <img src="images/suggestionform.png" alt="whatsapp">
-                </button>
-            </div>  
-        </div>
+        <section class="buttonss">
+            <div class="small-buttons-container">
 
-    </div>
+                <div class="button-container">
+                    <button class="charming-button small-button" title="请用微信扫描">
+                        <img src="images/wechatIcon.png" alt="wechat">
+                    </button>
+                    <p>WeChat</p> <!-- Short form name for the "WeChat" button -->
+                    <p>微信</p> <!-- Short form name for the "WeChat" button -->
+                </div>
+        
+                <div class="button-container">
+                    <button class="charming-button small-button" title="WhatsApp" onclick="window.location.href='https://api.whatsapp.com/send/?phone=60178998827&text&type=phone_number&app_absent=0'">
+                        <img src="images/whatsappIcon.png" alt="whatsapp">
+                    </button>
+                    <p>WhatsApp</p> <!-- Short form name for the "WhatsApp" button -->
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+    
+    <footer>
+        <!-- Footer content -->
+    </footer>
 
     <script src="scriptHome.js"></script>
     
 </body>
 
 </html>
+
+
+
