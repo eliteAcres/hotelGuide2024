@@ -21,6 +21,7 @@ header, main, footer {
     width: 100%;
     max-width: 1000px; /* Adjust maximum width as needed */
     margin: 0 auto; /* Center the container horizontally */
+    margin-top: -20px; /* Adjust the negative margin-top to pull the container up */
 }
 /*To ensure that all elements (header, main, footer, etc.) have the same width and are within the viewport width,*/
 
