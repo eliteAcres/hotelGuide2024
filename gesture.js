@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     var displayedImage = document.getElementById("displayedImage");
     var zoomLevel = 1;
-    var maxZoom = 5;
+    var maxZoom = 8;
     var minZoom = 0.5;
 
     var lastX = 0;
