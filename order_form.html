@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+</head>
+<body>
+    <h2>Order Form</h2>
+    <form action="https://formspree.io/f/xjvnlown" method="post">
+        <label for="product">Product:</label>
+        <input type="text" id="product" name="product" required><br><br>
+        
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" required><br><br>
+        
+        <label for="customer_name">Your Name:</label>
+        <input type="text" id="customer_name" name="customer_name" required><br><br>
+        
+        <input type="email" name="_replyto" style="display:none">
+        
+        <input type="submit" value="Submit Order">
+    </form>
+</body>
+</html>
